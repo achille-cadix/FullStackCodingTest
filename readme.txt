@@ -2,7 +2,7 @@ Here is the V1 ! with comments on the code and a few adjustments here and there
 
 == Requirements ==
 
-Front end : only npm 
+Front end : only npm I think, the rest is installed in the folder
 Backend : python 3, flask and peewee (pip install peewee flask flask_cors flask-peewee)
 
 == Run the servers ==
