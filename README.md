@@ -1,3 +1,6 @@
+This is a coding test I had to complete in 6 hours.
+The website's purpose is to display the quantities of food to purchase for each week, according to a provided DB. 
+
 Here is the V1 ! with comments on the code and a few adjustments here and there
 
 == Requirements ==
@@ -22,7 +25,7 @@ Now you should be able to view the name of the products and their volume requier
 I've changed a few things since the last version : I added the sku number in the frontend, and also made the frontend a little bit more good looking
 Moreover, the table is automatically sorted by name.
 Most of the changes are comments, mainly in the backend main.py, in which I explain everystep of my program.
-There is also some comments in front/client/src/App.vue and front/client/src/components/stableau.vue
+There is also some comments in front/client/src/App.vue and front/client/src/components/tableau.vue
 
 
 Hope you'll like my work, I found this test very stimulant, I've learned at lot. It also really made me want work as a developper, I know I've barely touched the tip of the iceberg, and I'd like to learn even more.
