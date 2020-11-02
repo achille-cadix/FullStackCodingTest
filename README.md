@@ -1,6 +1,8 @@
 This is a coding test I had to complete in 6 hours.
 The website's purpose is to display the quantities of food to purchase for each week, according to a provided DB. 
 
+The following lines are instructions on how to run the website on local host.
+
 Here is the V1 ! with comments on the code and a few adjustments here and there
 
 == Requirements ==
