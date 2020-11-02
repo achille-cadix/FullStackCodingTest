@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@1.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+<div id="app">
+    <v-app>
+        <v-toolbar fixed app>
+            <v-toolbar-title v-text="title"></v-toolbar-title>
+        </v-toolbar>
+        <main>
+            <v-content>
+                <v-container fluid>
+                    <v-layout row wrap>
+                        <v-flex xs12>
+                            <v-select :items="weeks" v-model="week" label="Week" solo></v-select>
+                        </v-flex>
+                        <v-flex xs12>
+                            <!-- Complete me ! -->
+                        </v-flex>
+                    </v-layout>
+                    <page></page>
+                </v-container>
+            </v-content>
+        </main>
+        <v-footer fixed app>
+            <span>&copy; 2018</span>
+        </v-footer>
+    </v-app>
+</div>
+
+<script type="text/x-template" id="page">
+    <v-layout column align-center>
+        <div>
+            <img src="./v.png" alt="Vuetify.js" class="mb-5" height="100px"/>
+        </div>
+        <blockquote>
+            &#8220;First, solve the problem. Then, write the code.&#8221;
+            <footer>
+                <small>
+                    <em>&mdash;John Johnson</em>
+                </small>
+            </footer>
+        </blockquote>
+    </v-layout>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@1.x/dist/vuetify.js"></script>
+<script>
+    Vue.component('page', {
+        template: '#page'
+    })
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'HelloFresh AuTech',
+            headers: [{text: 'SKU Id', value: 'sku_id'},
+                {text: 'Name', value: 'name'},
+                {text: 'Price', value: 'price'},
+                {text: 'Volume', value: 'volume'}],
+            ingredients: [],
+            weeks: ['2018-W29', '2018-W30', '2018-W31', '2018-W32', '2018-W33', '2018-W34', '2018-W35', '2018-W36', '2018-W37', '2018-W38', '2018-W39', '2018-W40', '2018-W41', '2018-W42', '2018-W43', '2018-W44', '2018-W45', '2018-W46', '2018-W47', '2018-W48', '2018-W49'],
+            week: '2018-W29'
+        },
+        watch: {
+            week: function () {
+                this.getIngredients();
+            }
+        },
+        created() {
+            this.getIngredients();
+        },
+        methods: {
+            getIngredients() {
+                // Complete me !
+            }
+        }
+    })
+</script>
+</body>
+</html>
